@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Connecti</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<div id="common-header">
+  		<div class='logo'>
+  			<img width="120" src="https://www.webdesignerdepot.com/cdn-origin/uploads/2009/03/old_dollar.jpg">
+  		</div>
+
+  		<div class='auth-info-links'>
+  			<% if user_signed_in? %>
+  			<p><%= current_user.email %></p>
+  			<p class="links"><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></p>
+
+  			<% else %>
+
+  				<p class="links"><%= link_to "Sign In", new_user_session_path %></p>
+  				<p class="links"><%= link_to "Sign Up", new_user_registration_path %></p>
+  			<% end %>
+  		</div>
+  	</div>
+
+
+    <%= yield %>
+  </body>
+</html>
