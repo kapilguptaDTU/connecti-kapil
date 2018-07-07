@@ -1,4 +1,4 @@
-<main id="posts-home">
+ <main id="posts-home">
 
 	<div class="group-links"><h4>Group Links</h4></div>
 
@@ -46,9 +46,35 @@
 
 						<% end %>
 </div></div>	</div>
-						<div class="new-post-form post-form comments">
+						<div class="new-post-form-comments post-form comments">
 							<!-- <h5>Add Comment</h5> -->
-							<% if user_signed_in? %>
+
+
+              <ul>
+                <% post.comments.reverse.each do |comment| %>
+                <li>
+                  <p><%= comment.content %><br>
+                    <sub><%= comment.user.email %></sub>
+                  </p>
+                  <% if user_signed_in? && comment.user_id ==  current_user.id %>
+                    <p><%= link_to "Delete", destroy_comment_path(comment.id), method: :delete %></p>
+                    <% end %>
+
+                </li>
+
+                <% end %>
+              </ul>
+
+
+
+
+
+
+
+
+
+
+            	<% if user_signed_in? %>
 							<%= form_for @comment do |f| %>
 								<%= f.hidden_field :post_id, value: post.id %>
 
@@ -59,20 +85,7 @@
 							<% end %>
 							<% end %>
 
-							<ul>
-								<% post.comments.reverse.each do |comment| %>
-								<li>
-									<p><%= comment.content %>
-										<sub><%= comment.user.email %></sub>
-									</p>
-									<% if user_signed_in? && comment.user_id ==  current_user.id %>
-										<p><%= link_to "Delete", destroy_comment_path(comment.id), method: :delete %></p>
-										<% end %>
 
-								</li>
-
-								<% end %>
-							</ul>
 
 
 						</div>

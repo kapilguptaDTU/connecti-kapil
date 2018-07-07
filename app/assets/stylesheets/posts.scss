@@ -13,9 +13,12 @@
 background-image: url(depositphotos_2614484-stock-photo-old-style-grunge-background.jpg);
 	.group-links{
 		width: 28%;
+
 		// background-color: #880c0c;
 		border-radius: 1%;
 background-image: url(scroll.png);
+background-repeat: no-repeat;
+height: 90vh;
 		h4{
 			// background-color: green;
       text-align: center;
@@ -38,6 +41,7 @@ background-image: url(scroll.png);
 			justify-content: center;
 			width: 90%;
 background-color: #131315;
+background-image: url(download.jpeg);
 margin-left: 5%;
 padding: 10px;
 // flex-direction: column;
@@ -48,6 +52,7 @@ padding: 10px;
 			form{
 			display: flex;
 				flex-direction: column;
+				// background-image: url(abc.png);
 				label{color: white;text-align: center;}
 				textarea {
     width: 700px;
@@ -76,16 +81,23 @@ input[type="submit" i]{
 
 		.posts-list{
 list-style: none;
-color: gray;
+color: #561111;
+width: 100%;
 .post-form{
 	display: flex;
 	justify-content: center;
 	width: 90%;
 background-color: #131315;
+background-image: url(postdisplay.jpg);
+background-size: 100% 100%;
+
+// background-image: url(download.jpeg);
+background-repeat: no-repeat;
 // margin-bottom: 40px;
 // margin-left: 5%;
 flex-direction: column;
 padding: 10px;
+
 // justify-content: space-around;
 .email-bold{
 	font-weight: bold;
@@ -113,19 +125,67 @@ border: 1px solid black;
 margin-left: 0px;
 overflow: hidden;
 padding-top: 30px;
-
+// background-color: black;
 textarea{
 	align-self: center;
 }
 
 a:-webkit-any-link {
-		color: white;
+		color: #8c1010;
 		cursor: pointer;
 		text-decoration: underline;
 }
 
 
+
+
 }
+
+.new-post-form-comments{
+	display: flex;
+	justify-content: center;
+	width: 90%;
+background-color: #131315;
+// background-image: url(postdisplay.jpg);
+// margin-left: 5%;
+padding: 10px;
+// flex-direction: column;
+
+
+
+
+	form{
+	display: flex;
+		flex-direction: column;
+		// background-image: url(abc.png);
+		label{color: white;text-align: center;}
+		textarea {
+width: 700px;
+height: 150px;
+background-color: #000000;
+border-radius: 3%;
+border-color: transparent;
+color: white;
+}
+input[type="submit" i]{
+background-color: transparent;
+border-color: transparent;
+text-align: right;
+color: #8c1010;
+font-size: 18px;
+text-decoration: underline;
+font-weight: bold;
+}
+
+
+
+
+	}
+
+}
+
+
+
 
 		}
 	}

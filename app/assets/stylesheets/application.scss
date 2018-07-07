@@ -16,6 +16,96 @@
 
 body{
 	margin: 0;
+	background-image: url(depositphotos_2614484-stock-photo-old-style-grunge-background.jpg);
+
+
+.position-container{
+
+display: flex;
+justify-content: center;
+margin-top: 25vh;
+
+	.container{
+		border: 2px solid black;
+		box-shadow: 5px 10px 10px #62693d;
+		display: flex;
+		// flex-wrap: wrap-reverse;
+
+text-align: center;
+justify-content: center;
+width: 501px;
+	background-image: url(abc.jpg);
+	background-position: center;
+	background-attachment: fixed;
+
+	flex-direction: column;
+	input[type="submit" i]{background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 14px 2px;
+    cursor: pointer;}
+
+		a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+		width: 40%;
+		border: 1px solid black;
+
+}
+
+
+a:hover, a:active {
+    background-color: red;
+		border: 1px solid black;
+}
+
+h2{
+	background-color: green;
+	margin-top: 0;
+	padding: 10px;
+	// color: white;
+}
+
+.field{
+	label{
+	font-weight: bold;
+	// margin: 100px;
+	}}
+
+.linkto{
+	margin-top: 50px;
+	display: flex;
+	border: 1px solid black;
+}
+.linkto-login{
+	margin-top: 50px;
+	// display: flex;
+a:link{	width: 90%;
+// overflow: hidden;
+}
+	border: 1px solid black;
+}
+}	}
+
+
+
+
+
+
+
+
+
+
+
 
 	#common-header{
 		background-color: black;
@@ -49,6 +139,5 @@ body{
 		}
 
 	}
-
 
 }
