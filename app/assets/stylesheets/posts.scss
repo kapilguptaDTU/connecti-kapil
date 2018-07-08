@@ -9,16 +9,26 @@
 	display: flex;
 	justify-content: space-evenly;
 	padding-top: 25px;
-	background-color: #3E3C30;
+	// background-color: #3E3C30;
 background-image: url(depositphotos_2614484-stock-photo-old-style-grunge-background.jpg);
+background-attachment: fixed;
 	.group-links{
 		width: 28%;
-
+		margin-top: 40px;
+		position: fixed;
+    left: 0;
 		// background-color: #880c0c;
-		border-radius: 1%;
+		// border-radius: 1%;
 background-image: url(scroll.png);
 background-repeat: no-repeat;
 height: 90vh;
+display: flex;
+align-items: center;
+// justify-content: center;
+flex-direction: column;
+
+
+
 		h4{
 			// background-color: green;
       text-align: center;
@@ -29,17 +39,36 @@ height: 90vh;
       font-size: 30px
 
 		}
+
+
+.group-link-box{
+	display: flex;
+	justify-content: center;
+	width: 59%;
+	    height: 48%;
+	    background-color: #fefffd4a;
+	margin-top: 40px
+}
+
+
+
 	}
 
 	.deewar-posts{
-		width: 50%;
-		border-right: 1px dashed #007effe0;
-		border-left: 1px dashed #007effe0;
+		width: 44%;
+margin-left: 0px;
 
+		// border-right: 1px dashed #007effe0;
+		// border-left: 1px dashed #007effe0;
+display: flex;
+flex-direction: column;
 		.new-post-form{
 			display: flex;
+			margin-top: 40px;
+overflow: hidden;
 			justify-content: center;
 			width: 90%;
+			height: 200px;
 background-color: #131315;
 background-image: url(download.jpeg);
 margin-left: 5%;
@@ -161,7 +190,7 @@ padding: 10px;
 		label{color: white;text-align: center;}
 		textarea {
 width: 700px;
-height: 150px;
+height: 75px;
 background-color: #000000;
 border-radius: 3%;
 border-color: transparent;
@@ -189,6 +218,50 @@ font-weight: bold;
 
 		}
 	}
+
+
+	.friends-list{
+		width: 28%;
+		margin-top: 40px;
+		position: fixed;
+		left: 0px;
+		margin-left: 72%;
+		display: flex;
+		align-items: center;
+		// justify-content: center;
+		flex-direction: column;
+
+		// background-color: #880c0c;
+		// border-radius: 1%;
+background-image: url(scroll.png);
+background-repeat: no-repeat;
+height: 90vh;
+
+
+		h4{
+			// background-color: green;
+      text-align: center;
+			margin: 10px;
+			border-radius: 11%;
+			    color: #272619;
+
+      font-size: 30px
+		}
+
+		.friends-box{
+			display: flex;
+			justify-content: center;
+			width: 59%;
+			    height: 48%;
+			    background-color: #fefffd4a;
+			margin-top: 40px;
+
+		}
+
+	}
+
+
+
 
 }
 
@@ -319,3 +392,402 @@ font-weight: bold;
 // 	}
 //
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//
+// // Place all the styles related to the posts controller here.
+// // They will automatically be included in application.css.
+// // You can use Sass (SCSS) here: http://sass-lang.com/
+//
+//
+//
+// #posts-home{
+//
+// 	display: flex;
+// 	justify-content: space-evenly;
+// 	padding-top: 25px;
+// 	// background-color: #3E3C30;
+// background-image: url(depositphotos_2614484-stock-photo-old-style-grunge-background.jpg);
+// 	.group-links{
+// 		width: 25%;
+// 		margin-top: 40px;
+//
+// 		// background-color: #880c0c;
+// 		border-radius: 1%;
+// background-image: url(scroll.png);
+// background-repeat: no-repeat;
+// height: 90vh;
+//
+// 		h4{
+// 			// background-color: green;
+//       text-align: center;
+// 			margin: 10px;
+// 			border-radius: 11%;
+// 			    color: #272619;
+//
+//       font-size: 30px
+//
+// 		}
+// 	}
+//
+// 	.deewar-posts{
+// 		width: 50%;
+// 		border-right: 1px dashed #007effe0;
+// 		border-left: 1px dashed #007effe0;
+//
+// 		.new-post-form{
+// 			display: flex;
+// 			margin-top: 40px;
+//
+// 			justify-content: center;
+// 			width: 90%;
+// background-color: #131315;
+// background-image: url(download.jpeg);
+// margin-left: 5%;
+// padding: 10px;
+// // flex-direction: column;
+//
+//
+//
+//
+// 			form{
+// 			display: flex;
+// 				flex-direction: column;
+// 				// background-image: url(abc.png);
+// 				label{color: white;text-align: center;}
+// 				textarea {
+//     width: 700px;
+//     height: 150px;
+//     background-color: #000000;
+//     border-radius: 3%;
+//     border-color: transparent;
+//     color: white;
+// }
+// input[type="submit" i]{
+// 	background-color: transparent;
+//     border-color: transparent;
+//     text-align: right;
+//     color: #cecece;
+//     font-size: 18px;
+//     text-decoration: underline;
+//     font-weight: bold;
+// }
+//
+//
+//
+//
+// 			}
+//
+// 		}
+//
+// 		.posts-list{
+// list-style: none;
+// color: #561111;
+// width: 100%;
+// .post-form{
+// 	display: flex;
+// 	justify-content: center;
+// 	width: 90%;
+// background-color: #131315;
+// background-image: url(postdisplay.jpg);
+// background-size: 100% 100%;
+//
+// // background-image: url(download.jpeg);
+// background-repeat: no-repeat;
+// // margin-bottom: 40px;
+// // margin-left: 5%;
+// flex-direction: column;
+// padding: 10px;
+//
+// // justify-content: space-around;
+// .email-bold{
+// 	font-weight: bold;
+// 	font-size: 24px;
+// }
+// .link-tos{
+// 	color: white;
+// display: flex;
+// justify-content: space-around;
+// border: 1px solid black;
+//     background-color: #0C0C14;
+// 		.some-distance{
+// 			display:flex;
+// 			justify-content: space-around;
+// 		}
+// 		a:-webkit-any-link {
+//     color: white;
+//     cursor: pointer;
+//     text-decoration: underline;
+// }
+// }
+// }
+//
+// .comments{margin-bottom: 40px;
+// margin-left: 0px;
+// overflow: hidden;
+// padding-top: 30px;
+// // background-color: black;
+// textarea{
+// 	align-self: center;
+// }
+//
+// a:-webkit-any-link {
+// 		color: #8c1010;
+// 		cursor: pointer;
+// 		text-decoration: underline;
+// }
+//
+//
+//
+//
+// }
+//
+// .new-post-form-comments{
+// 	display: flex;
+// 	justify-content: center;
+// 	width: 90%;
+// background-color: #131315;
+// // background-image: url(postdisplay.jpg);
+// // margin-left: 5%;
+// padding: 10px;
+// // flex-direction: column;
+//
+//
+//
+//
+// 	form{
+// 	display: flex;
+// 		flex-direction: column;
+// 		// background-image: url(abc.png);
+// 		label{color: white;text-align: center;}
+// 		textarea {
+// width: 700px;
+// height: 150px;
+// background-color: #000000;
+// border-radius: 3%;
+// border-color: transparent;
+// color: white;
+// }
+// input[type="submit" i]{
+// background-color: transparent;
+// border-color: transparent;
+// text-align: right;
+// color: #8c1010;
+// font-size: 18px;
+// text-decoration: underline;
+// font-weight: bold;
+// }
+//
+//
+//
+//
+// 	}
+//
+// }
+//
+//
+//
+//
+// 		}
+// 	}
+//
+// }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// // // Place all the styles related to the posts controller here.
+// // // They will automatically be included in application.css.
+// // // You can use Sass (SCSS) here: http://sass-lang.com/
+// //
+// //
+// //
+// // #posts-home{
+// //
+// // 	display: flex;
+// // 	justify-content: space-evenly;
+// // 	padding-top: 25px;
+// // 	background-color: #3E3C30;
+// //
+// // 	.group-links{
+// // 		width: 28%;
+// // 		// background-color: #880c0c;
+// // 		border-radius: 1%;
+// // background-image: url(scroll.png);
+// // 		h4{
+// // 			// background-color: green;
+// //       text-align: center;
+// // 			margin: 10px;
+// // 			border-radius: 11%;
+// // 			    color: #272619;
+// //
+// //       font-size: 30px
+// //
+// // 		}
+// // 	}
+// //
+// // 	.deewar-posts{
+// // 		width: 50%;
+// // 		border-right: 1px dashed #007effe0;
+// // 		border-left: 1px dashed #007effe0;
+// //
+// // 		.new-post-form{
+// // 			display: flex;
+// // 			justify-content: center;
+// // 			width: 90%;
+// // background-color: #131315;
+// // margin-left: 5%;
+// // // flex-direction: column;
+// //
+// //
+// //
+// //
+// // 			form{
+// // 			display: flex;
+// // 				flex-direction: column;
+// // 				label{color: white;text-align: center;}
+// // 				textarea {
+// //     width: 700px;
+// //     height: 150px;
+// //     background-color: #000000;
+// //     border-radius: 3%;
+// //     border-color: transparent;
+// //     color: white;
+// // }
+// // input[type="submit" i]{
+// // 	background-color: transparent;
+// //     border-color: transparent;
+// //     text-align: right;
+// //     color: #cecece;
+// //     font-size: 18px;
+// //     text-decoration: underline;
+// //     font-weight: bold;
+// // }
+// //
+// //
+// //
+// //
+// // 			}
+// //
+// // 		}
+// //
+// // 		.posts-list{
+// // list-style: none;
+// // color: gray;
+// // .post-form{
+// // 	display: flex;
+// // 	    margin-bottom: 40px;
+// // 	justify-content: center;
+// // 	width: 90%;
+// // background-color: #131315;
+// // // margin-left: 5%;
+// // flex-direction: column;
+// // // justify-content: space-around;
+// // .email-bold{
+// // 	font-weight: bold;
+// // 	font-size: 24px;
+// // }
+// // .link-tos{
+// // 	color: white;
+// // display: flex;
+// // justify-content: space-around;
+// // border: 1px solid gray;
+// //
+// // }}
+// //
+// //
+// //
+// // 		}
+// // 	}
+// //
+// // }

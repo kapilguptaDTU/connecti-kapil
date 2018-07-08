@@ -112,7 +112,9 @@ a:link{	width: 90%;
 		display: flex;
 		justify-content: space-around;
 		box-shadow: 1px 1px 1px 1px lightgrey;
-
+		position: fixed;
+    width: 100%;
+    margin-bottom: 20px;
 
 		.logo{
 			width: 40%;
